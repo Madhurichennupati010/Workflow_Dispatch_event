@@ -1,0 +1,10 @@
+name: workflow_dispatch_event
+
+on:
+  workflow_dispatch:
+jobs:
+  Demo:
+    runs-on: ubuntu-server
+    steps:
+      - name: print message
+        run : echo "dispatch event successfully"
